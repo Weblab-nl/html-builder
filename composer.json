@@ -1,0 +1,6 @@
+{
+    "name": "weblabnl/html-builder",
+    "description": "Weblab HTML builder",
+    "type": "library",
+    "require": {}
+}
