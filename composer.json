@@ -1,6 +1,6 @@
 {
     "name": "weblabnl/html-builder",
     "description": "Weblab HTML builder.",
-    "type": "library",
+    "version": "0.0.0.1",
     "require": {}
 }
