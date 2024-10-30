@@ -5,7 +5,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Weblab\\html\\": "src/"
+            "Weblab\\HtmlBuilder\\": "src/"
         }
     }
 }

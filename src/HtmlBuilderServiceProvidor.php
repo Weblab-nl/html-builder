@@ -1,6 +1,6 @@
 <?php
 
-namespace Weblab\html\HtmlBuilder;
+namespace Weblab\HtmlBuilder;
 
 use Illuminate\Support\ServiceProvider;
 
