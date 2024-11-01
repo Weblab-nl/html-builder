@@ -1,1 +1,7 @@
-this is a script file
+<script
+    {{ $attributes->merge([
+    'src' => '',
+    'type' => 'text/javascript'
+]) }}
+>
+</script>
