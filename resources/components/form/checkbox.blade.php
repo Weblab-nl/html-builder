@@ -19,9 +19,7 @@
         type="checkbox"
         value="{{ $value }}"
         {{ $checked ? 'checked' : null }}
-        {{ $attributes->merge([
-            'class' => 'form-control'
-        ]) }}
+        {{ $attributes }}
 />
 
 @if($slot->isNotEmpty())
