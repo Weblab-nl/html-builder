@@ -11,7 +11,7 @@
 @endphp
 
 <input
-    id = {{ $name }}
+    id="{{ $name }}"
     name="{{ $name }}"
     class="form-control"
     type="hidden"
