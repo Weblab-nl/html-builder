@@ -24,7 +24,7 @@
         id="{{ $id }}"
         name="{{ $name }}"
         type="{{ $type }}"
-        value="{{ $value }}"
+        value="{{ old($name) ?? $value }}"
         {{ $attributes->merge([
             'class' => 'form-control'
         ]) }}

@@ -11,6 +11,10 @@
         $id = $name;
     }
 
+    if (old($name)) {
+        $value = old($name);
+    }
+
     $errorClass = !empty($errors->first($name)) ? 'has-error' : '';
 @endphp
 
