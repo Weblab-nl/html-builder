@@ -5,6 +5,7 @@
     'value' => null,
     'label' => '',
     'labelClasses' => '',
+    'multiple' => false
 ])
 
 @php
@@ -27,9 +28,19 @@
             'class' => 'form-control'
         ]) }}
     >
-        @foreach($options as $modelValue => $frontendValue)
-            <option value="{{ $modelValue }}" {{ $modelValue === $value ? 'selected' : null}}>{{ $frontendValue }}</option>
-        @endforeach
+        @if (!$multiple)
+            @foreach($options as $modelValue => $frontendValue)
+                <option value="{{ $modelValue }}" {{ $modelValue === $value ? 'selected' : null}}>{{ $frontendValue }}</option>
+            @endforeach
+        @else
+            @foreach($options as $groupName => $group)
+                <option disabled>{{ $groupName }}</option>
+                @foreach($group as $modelValue => $frontendValue)
+                    <option value="{{ $modelValue }}" {{ $modelValue === $value ? 'selected' : null}}>{{ $frontendValue }}</option>
+                @endforeach
+                <option disabled></option>
+            @endforeach
+        @endif
     </select>
 
     @error($name)
