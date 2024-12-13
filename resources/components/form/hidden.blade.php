@@ -16,4 +16,5 @@
     class="form-control"
     type="hidden"
     value="{{ $value }}"
+    {{ $attributes }}
 >

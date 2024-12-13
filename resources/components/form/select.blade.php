@@ -44,7 +44,7 @@
     </select>
 
     @error($name)
-        <p class="help-block no-mb">
+        <p class="help-block no-mb error-message">
             {{ $errors->first($name) }}
         </p>
     @enderror
