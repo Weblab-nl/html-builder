@@ -11,7 +11,7 @@
         $id = $name;
     }
 
-    if (old($name)) {
+    if (!empty(old($name))) {
         $value = old($name);
     }
 

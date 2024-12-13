@@ -9,7 +9,7 @@
 
 @php
     if (empty($id)) {
-        $id = $name;
+        $id = $value;
     }
 @endphp
 

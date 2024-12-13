@@ -5,7 +5,7 @@
     'value' => null,
     'label' => '',
     'labelClasses' => '',
-    'multiple' => false
+    'grouped' => false
 ])
 
 @php
@@ -28,7 +28,7 @@
             'class' => 'form-control'
         ]) }}
     >
-        @if (!$multiple)
+        @if (!$grouped)
             @foreach($options as $modelValue => $frontendValue)
                 <option value="{{ $modelValue }}" {{ $modelValue === $value ? 'selected' : null}}>{{ $frontendValue }}</option>
             @endforeach
